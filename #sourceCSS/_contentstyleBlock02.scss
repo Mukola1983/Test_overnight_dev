@@ -1,0 +1,305 @@
+
+
+.block02 {
+	margin: 92px 0 0 0;
+	width: 100%;
+	min-height: 258px;
+	background: url("../img/content/block_02BG.png") 50% 0/contain no-repeat ;
+	@media (max-width: 900px){
+		background: #FFFFFF;
+	}
+}
+
+
+.row04 {
+	padding: 91px 0 0 0;
+
+	@media (max-width: 1100px){
+		flex-wrap:wrap;
+	}
+	@media (max-width: 900px){
+		justify-content: center;
+	}
+
+	&__box {
+		min-width: 300px;
+		flex: 0 0 25%;
+		@media (max-width: 1100px){
+			flex: 0 0 40%;
+			margin: 10px;
+			padding: 30px 0;
+		}
+		border: 15px solid #F79900;
+		background: #FFFFFF;
+		text-align: center;
+		padding: 70px 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		& h3{
+			font-size: 96px;
+			font-weight: 900;
+			color: #F79900;
+			@media (max-width: 900px){
+				font-size: 50px;
+			}
+		}
+		& p{
+			font-size: 14px;
+			line-height: 25px;
+			letter-spacing: 2px;
+		}
+	}
+	&__box:nth-child(odd){
+		border: 15px solid #F79900;
+		& h3{
+			color: #F79900;
+		}
+	}
+	&__box:nth-child(even){
+		border: 15px solid #333333;
+		& h3{
+			color: #333333;
+		}
+	}
+}
+
+
+// Row 05 styles =============================
+
+.row05 {
+	margin: 90px 0 0 0;
+	&__header {
+		text-align: center;
+
+	}
+	&__header_box {
+		max-width: 650px;
+		margin: 0 auto;
+		& h3{
+			font-size: 50px;
+			@media (max-width: 900px){
+				font-size: 30px;
+			}
+		}
+	}
+
+	&__menu {
+		margin: 24px 0 0 0;
+	}
+	&__list {
+		display: flex;
+		justify-content: space-around;
+	}
+	&__item {
+		font-size: 26px;
+		border-bottom: 1px solid #FFFFFF;
+		transition: 0.3s;
+		@media (max-width: 900px){
+				font-size: 20px;
+			}
+		& a{
+			color: #000000;
+		}
+
+		&:hover{
+			& a{
+				color: #F79900;
+			}
+			border-bottom: 1px solid #F79900;
+		}
+	}
+	&__slayder {
+		margin: 37px 0 0 0;
+		position: relative;
+		
+	}
+	&__box {
+		min-width: 0;
+		width: 574px;
+		min-height: 543px;
+		@media (max-width: 1100px){
+			width: 404px;
+			min-height: 400px;
+		}
+		@media (max-width: 900px){
+			width: 304px;
+			min-height: 300px;
+		}
+		@media (max-width: 650px){
+			width: 404px;
+			min-height: 400px;
+		}
+		@media (max-width: 450px){
+			width: 354px;
+			min-height: 350px;
+		}
+
+		&.bgImage{
+			background: url("../img/content/slider (1).png") 50% 50%/100% 100% no-repeat ;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			& h3{
+				font-size: 48px;
+				color: #FFFFFF;
+				@media (max-width: 900px){
+					font-size: 30px;
+				}
+				& span{
+					color: #F79900;
+				}
+			}
+		}
+		&.textBox{
+			border: 15px solid #F79900;
+			padding: 80px 40px 0 ;
+			@media (max-width: 900px){
+					padding: 30px 10px 0 ;
+				}
+			& p{
+				margin: 0 0 20px 0;
+				font-size: 14px;
+				& span{
+					font-weight: 900;
+				}
+			}
+		}
+
+	}
+}
+
+// Slider styles =========================
+
+.arrows{
+	position: absolute;
+	bottom: 100px;
+	right: 250px;
+}
+
+.swiper-button-prev{
+	border: 1px solid #F79900;
+	padding: 30px;
+	border-radius: 50%;
+	width: 100px;
+
+}
+
+.swiper-button-next{
+	border: 1px solid #F79900;
+	padding: 30px;
+	border-radius: 50%;
+	width: 100px;
+}
+
+.swiper-button-prev::after{
+	transform: rotate(180deg);
+	color: #F79900;
+}
+.swiper-button-next::after{
+	transform: rotate(180deg);
+	color: #F79900;
+}
+
+.imageSlider{
+		
+		}
+
+// Slider styles =========================
+// Row 05 styles =============================
+
+
+
+// Row 06 styles =============================
+
+.row06 {
+	margin: 90px 0 0 0;
+	&__consultBox {
+		transform: translate(-120%, 0);
+		opacity: 0;
+		transition: all 0.9s ease 0s;
+		&._active{
+			transform: translate(0%, 0%);
+			opacity: 1;
+		}
+	}
+	&__consultBox_title {
+		font-size: 48px;
+		font-weight: 900;
+		@media (max-width: 900px){
+			font-size: 30px;
+		}
+	}
+	&__consultBox_text {
+		max-width: 517px;
+		margin: 15px 0 0 0;
+		& p{
+			font-size: 14px;
+			margin: 10px 0 0 0;
+			& span{
+				font-weight: 900;
+			}
+		}
+	}
+	&__consultBox_image {
+		margin: 45px;
+		max-width: 674px;
+		& img{
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	&__formBox {
+		transform: translate(120%, 0);
+		opacity: 0;
+		transition: all 0.9s ease 0s;
+		&._active{
+			transform: translate(0%, 0%);
+			opacity: 1;
+		}
+
+	}
+}
+
+.flexItem {
+	flex: 0 0 50%;
+	@media (max-width: 550px){
+			flex: 0 0 80%;
+		}
+}
+.form {
+	& input{
+		width: 100%;
+		height: 66px;
+		border: 3px solid #BBBBBB;
+		padding: 10px;
+		font-size: 16px;
+	}
+	& p{
+		font-size: 16px;
+		margin: 0 0 10px 0;
+	}
+	& div{
+		margin: 0 0 15px 0;
+	}
+	&__name {
+	}
+	&__tel {
+	}
+	&__mail {
+	}
+	&__button {
+		& button{
+			background-color: #F79900;
+			width: 100%;
+			height: 66px;
+			font-size: 16px;
+			color: #FFFFFF;
+		}
+	}
+}
+
+
+// Row 06 styles =============================

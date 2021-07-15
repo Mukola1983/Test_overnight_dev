@@ -1,0 +1,88 @@
+
+
+.footer {
+	background: url("../img/footer/bg.png") 50% 50%/100% 100% no-repeat ;
+	min-height: 450px;
+	color: #FFFFFF;
+	@media (max-width: 1000px){
+			padding: 15px;
+		}
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		@media (max-width: 900px){
+			flex-wrap:wrap;
+		}
+	}
+	&__mainBlock {
+		display: flex;
+		margin: 90px 0 0 0;
+		@media (max-width: 600px){
+			flex-wrap:wrap;
+			justify-content: center;
+			text-align: center;
+		}
+
+	}
+	&__box {
+		margin: 0 100px 0 0;
+		@media (max-width: 600px){
+			margin: 0 80px 30px 0;
+		}
+		& h3{
+			font-size: 18px;
+			font-weight: 900;
+		}
+		& p{
+			font-size: 14px;
+			margin: 24px 0 0 0;
+		}
+	}
+	&__contacts {
+		margin: 90px 0 0 0;
+		font-size: 18px;
+		font-weight: 900;
+		& p{
+			margin: 0 0 30px 0;
+		}
+		& div{
+			display: flex;
+			& div{
+				margin: 0 5px 0 0;
+				width: 31px;
+				height: 31px;
+				border-radius: 50%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+
+			}
+		}
+	}
+	&__logo {
+		margin: 45px 0 0 0;
+	}
+}
+.wk {
+	background-color: #1E97DB;
+	& img{
+		height: 12px;
+		width: 20px;
+	}
+}
+.insta {
+	background-color: #1E97DB;
+	background: linear-gradient(180deg, #B926AA 0%, #5E26B9 91%);
+	& img{
+		height: 15px;
+		width: 15px;
+	}
+
+}
+.utube {
+	background-color: #FF2507;
+	& img{
+		height: 12px;
+		width: 16px;
+	}
+}
